@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: payment-service
-        image: {{ .Values.services.payment.v2Repository }}:{{ .Values.services.payment.v2Tag }}
+        image: {{ .Values.image.registry }}/{{ .Values.services.transaction.name }}:{{ .Values.services.transaction.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
         - name: VERSION
