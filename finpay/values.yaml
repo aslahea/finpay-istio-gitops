@@ -9,16 +9,16 @@ replicaCount: 1
 services:
   payment:
     name: payment-service
-    tag: "5"
+    tag: "6"
     # v2 image is published under a different repository/name in manifests
     v2Repository: "finpay/payment-service"
     v2Tag: "v2"
   user:
     name: user-service
-    tag: "5"
+    tag: "6"
   transaction:
     name: transaction-service
-    tag: "5"
+    tag: "6"
 
 gateway:
   host: finpay.local
